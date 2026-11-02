@@ -1,0 +1,14 @@
+{
+  "name": "soft-petals",
+  "version": "1.0.0",
+  "description": "Soft Petals guest house website",
+  "license": "ISC",
+  "dependencies": {
+    "@vercel/blob": "^2.8.2"
+  },
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=20"
+  }
+}

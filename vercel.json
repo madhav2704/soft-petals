@@ -1,0 +1,4 @@
+{
+  "rewrites": [{ "source": "/calendar.ics", "destination": "/api/calendar" }],
+  "headers": [{ "source": "/photos/(.*)", "headers": [{ "key": "Cache-Control", "value": "public, max-age=604800" }] }]
+}

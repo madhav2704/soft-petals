@@ -1,0 +1,1019 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Soft Petals | 3-Bedroom Home near Fateh Sagar Lake, Udaipur</title>
+<meta name="description" content="Soft Petals: an entire 3-bedroom, 3-bathroom boutique home for up to 6 guests near Fateh Sagar Lake, Udaipur. Terrace views, free parking outside the premises, Superhost Digvijay Singh Jhala. Book direct.">
+<meta name="theme-color" content="#0e7490">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --white:#ffffff; --bg-soft:#f7fafb; --line:#e5eaee;
+    --text:#1f2933; --muted:#5b6770;
+    --primary:#0e7490; --primary-dark:#0b5c72; --primary-soft:#e6f4f7;
+    --accent:#f59e0b; --error:#c2185b; --success:#15803d;
+    --radius:14px; --shadow:0 6px 24px rgba(15,40,55,.08);
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{font-family:Inter,system-ui,sans-serif;color:var(--text);background:var(--white);line-height:1.6;font-size:16px}
+  img{max-width:100%;display:block}
+  a{color:inherit;text-decoration:none}
+  h1,h2,h3{font-family:"Playfair Display",Georgia,serif;line-height:1.2;color:#102a35}
+  h2{font-size:clamp(1.7rem,4vw,2.4rem)}
+  .container{width:100%;max-width:1120px;margin:0 auto;padding:0 20px}
+  section{padding:72px 0}
+  .soft{background:var(--bg-soft)}
+  .eyebrow{display:block;font-size:.8rem;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--primary);margin-bottom:8px}
+  .lead{color:var(--muted);max-width:640px;margin-top:12px}
+  .center{text-align:center}.center .lead{margin-inline:auto}
+
+  /* Buttons */
+  .btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:13px 24px;border-radius:999px;font-weight:600;font-size:.95rem;border:2px solid transparent;cursor:pointer;transition:background .2s,color .2s,transform .2s,box-shadow .2s;font-family:inherit}
+  .btn:hover{transform:translateY(-2px)}
+  .btn-primary{background:var(--primary);color:#fff}
+  .btn-primary:hover{background:var(--primary-dark);box-shadow:0 8px 20px rgba(14,116,144,.25)}
+  .btn-outline{border-color:var(--primary);color:var(--primary);background:#fff}
+  .btn-outline:hover{background:var(--primary-soft)}
+  .btn-wa{background:#16a34a;color:#fff}
+  .btn-wa:hover{background:#15803d}
+  .btn:focus-visible,a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible{outline:3px solid var(--accent);outline-offset:2px}
+
+  /* Header */
+  header{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.96);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+  .nav{display:flex;align-items:center;justify-content:space-between;height:68px}
+  .brand{display:flex;align-items:center;gap:10px;font-weight:700}
+  .logo{width:38px;height:38px;border-radius:10px;background:var(--primary);color:#fff;display:grid;place-items:center;font-family:"Playfair Display",serif;font-size:1.2rem}
+  .brand small{display:block;font-size:.7rem;font-weight:500;color:var(--muted);letter-spacing:.08em;text-transform:uppercase}
+  .nav-links{display:flex;gap:26px;list-style:none;font-size:.93rem;font-weight:500}
+  .nav-links a{color:var(--muted);transition:color .2s}
+  .nav-links a:hover{color:var(--primary)}
+  .menu-btn{display:none;background:none;border:0;padding:8px;cursor:pointer;color:var(--text)}
+  .drawer{position:fixed;inset:0 0 0 auto;width:min(82%,320px);background:#fff;z-index:70;transform:translateX(100%);transition:transform .3s ease;padding:24px;box-shadow:-10px 0 30px rgba(0,0,0,.12);display:flex;flex-direction:column;gap:6px}
+  .drawer.open{transform:none}
+  .drawer a{padding:12px 10px;border-radius:10px;font-weight:500}
+  .drawer a:hover{background:var(--bg-soft)}
+  .drawer .btn{margin-top:12px}
+  .overlay{position:fixed;inset:0;background:rgba(16,42,53,.4);z-index:60;opacity:0;pointer-events:none;transition:opacity .3s}
+  .overlay.show{opacity:1;pointer-events:auto}
+  .drawer-close{align-self:flex-end;background:none;border:0;font-size:1.6rem;cursor:pointer;color:var(--muted)}
+
+  /* Hero */
+  .hero{padding:56px 0 64px}
+  .hero-grid{display:grid;grid-template-columns:1.05fr 1fr;gap:48px;align-items:center}
+  .badge{display:inline-flex;align-items:center;gap:6px;background:var(--primary-soft);color:var(--primary-dark);padding:6px 14px;border-radius:999px;font-size:.85rem;font-weight:600}
+  .hero h1{font-size:clamp(2.2rem,5.5vw,3.5rem);margin:18px 0 14px}
+  .hero h1 span{color:var(--primary)}
+  .hero p{color:var(--muted);font-size:1.08rem}
+  .hero-actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px}
+  .hero-img{aspect-ratio:4/3;border-radius:22px;background:linear-gradient(135deg,#e6f4f7,#fdf3e1);border:1px solid var(--line);display:grid;place-items:center;text-align:center;color:var(--muted);font-size:.9rem;overflow:hidden;position:relative}
+  .hero-img .tag{position:absolute;left:16px;bottom:16px;background:#fff;border-radius:12px;padding:10px 14px;box-shadow:var(--shadow);text-align:left;color:var(--text)}
+  .hero-img .tag strong{display:block;font-size:1.1rem;color:var(--primary)}
+
+  /* Stats */
+  .stats{display:grid;grid-template-columns:repeat(5,1fr);gap:14px;margin-top:-24px}
+  .stat{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:18px 12px;text-align:center;box-shadow:var(--shadow)}
+  .stat b{display:block;font-size:1.35rem;color:#102a35}
+  .stat span{font-size:.82rem;color:var(--muted)}
+  .stat b span{font-size:inherit;color:inherit}
+
+  /* Features */
+  .grid-4{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;margin-top:36px}
+  .card{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:22px;transition:box-shadow .2s,transform .2s}
+  .card:hover{box-shadow:var(--shadow);transform:translateY(-3px)}
+  .icon{width:44px;height:44px;border-radius:12px;background:var(--primary-soft);display:grid;place-items:center;font-size:1.3rem;margin-bottom:12px}
+  .card h3{font-family:Inter,sans-serif;font-size:1.02rem;font-weight:600;margin-bottom:4px}
+  .card p{font-size:.9rem;color:var(--muted)}
+
+  .about-grid{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center}
+  .chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:20px;list-style:none}
+  .chips li{background:#fff;border:1px solid var(--line);border-radius:999px;padding:6px 14px;font-size:.88rem}
+  .check-list{list-style:none;margin-top:18px;display:grid;gap:10px}
+  .check-list li{display:flex;gap:10px}
+  .check-list li::before{content:"✓";color:var(--primary);font-weight:700}
+
+  /* Gallery */
+  .gallery{display:grid;grid-template-columns:repeat(4,1fr);grid-auto-rows:170px;gap:12px;margin-top:36px}
+  .gallery{grid-auto-flow:dense}
+  .g{border:0;padding:0;border-radius:12px;overflow:hidden;cursor:zoom-in;background:var(--bg-soft);display:block}
+  .g img{width:100%;height:100%;object-fit:cover;transition:transform .4s ease}
+  .g:hover img{transform:scale(1.05)}
+  .g.big{grid-column:span 2;grid-row:span 2}
+  .g.wide{grid-column:span 2}
+  .lb{position:fixed;inset:0;z-index:90;background:rgba(10,20,26,.92);display:none;align-items:center;justify-content:center;padding:56px 12px}
+  .lb.open{display:flex}
+  .lb figure{max-width:1000px;width:100%;text-align:center}
+  .lb img{max-height:78vh;width:auto;max-width:100%;margin:0 auto;border-radius:10px}
+  .lb figcaption{color:#e5eef2;margin-top:12px;font-size:.92rem}
+  .lb button{position:absolute;background:rgba(255,255,255,.14);color:#fff;border:0;border-radius:50%;width:46px;height:46px;font-size:1.5rem;cursor:pointer}
+  .lb button:hover{background:rgba(255,255,255,.28)}
+  .lb .lb-close{top:14px;right:14px}.lb .lb-prev{left:12px;top:50%;transform:translateY(-50%)}.lb .lb-next{right:12px;top:50%;transform:translateY(-50%)}
+
+  /* Nearby */
+  .nearby{display:grid;grid-template-columns:repeat(2,1fr);gap:12px 32px;margin-top:32px;list-style:none}
+  .nearby li{display:flex;justify-content:space-between;gap:12px;padding:14px 0;border-bottom:1px solid var(--line)}
+  .nearby li span{color:var(--muted);font-size:.9rem;white-space:nowrap}
+
+  /* Booking */
+  .book-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:40px;align-items:start}
+  .price{font-size:2.4rem;font-weight:700;color:#102a35;font-family:"Playfair Display",serif}
+  .price small{font-size:1rem;color:var(--muted);font-family:Inter,sans-serif;font-weight:500}
+  .form-card{background:#fff;border:1px solid var(--line);border-radius:20px;padding:28px;box-shadow:var(--shadow)}
+  .row{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+  .field{margin-bottom:14px}
+  label{display:block;font-size:.85rem;font-weight:600;margin-bottom:6px}
+  input,select,textarea{width:100%;padding:12px 14px;border:1.5px solid var(--line);border-radius:10px;font:inherit;background:#fff;color:var(--text);transition:border-color .2s,box-shadow .2s}
+  input:focus,select:focus,textarea:focus{outline:none;border-color:var(--primary);box-shadow:0 0 0 4px var(--primary-soft)}
+  .invalid{border-color:var(--error)!important}
+  .err{color:var(--error);font-size:.78rem;min-height:1rem;margin-top:4px}
+  .estimate{background:var(--bg-soft);border-radius:12px;padding:14px 16px;margin:4px 0 18px;font-size:.92rem}
+  .estimate div{display:flex;justify-content:space-between}
+  .estimate .total{font-weight:700;font-size:1.05rem;border-top:1px solid var(--line);margin-top:8px;padding-top:8px}
+  .note{font-size:.78rem;color:var(--muted);margin-top:10px;text-align:center}
+  .success{display:none;text-align:center;padding:24px 0}
+  .success .tick{width:64px;height:64px;border-radius:50%;background:#dcfce7;color:var(--success);display:grid;place-items:center;font-size:2rem;margin:0 auto 14px}
+  .hp{position:absolute;left:-9999px}
+
+  [hidden]{display:none!important}
+  /* Booking steps & payment */
+  .how{list-style:none;counter-reset:s;margin-top:22px;display:grid;gap:14px}
+  .how li{counter-increment:s;display:grid;grid-template-columns:34px 1fr;column-gap:12px}
+  .how li::before{content:counter(s);grid-row:span 2;width:34px;height:34px;border-radius:50%;background:var(--primary);color:#fff;display:grid;place-items:center;font-weight:700;font-size:.9rem}
+  .how b{font-size:.98rem}.how span{color:var(--muted);font-size:.88rem}
+  .steps{display:flex;gap:6px;margin-bottom:20px}
+  .steps span{flex:1;text-align:center;font-size:.78rem;font-weight:600;color:var(--muted);padding-top:8px;border-top:3px solid var(--line)}
+  .steps span.on{color:var(--primary);border-color:var(--primary)}
+  .summary{background:var(--bg-soft);border-radius:12px;padding:14px 16px;font-size:.92rem;margin-bottom:18px}
+  .summary div{display:flex;justify-content:space-between;gap:12px;padding:3px 0}
+  .summary .total{font-weight:700;font-size:1.05rem;border-top:1px solid var(--line);margin-top:6px;padding-top:8px}
+  .pay-opt{border:0;margin-bottom:18px}
+  .pay-opt legend{font-size:.85rem;font-weight:600;margin-bottom:8px}
+  .opts{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+  .opt{display:block;margin:0;cursor:pointer}
+  .opt input{position:absolute;opacity:0}
+  .opt span{display:block;border:1.5px solid var(--line);border-radius:12px;padding:12px 14px;transition:border-color .2s,background .2s}
+  .opt b{display:block;font-size:.92rem}.opt em{font-style:normal;color:var(--primary);font-weight:700}
+  .opt input:checked + span{border-color:var(--primary);background:var(--primary-soft)}
+  .opt input:focus-visible + span{outline:3px solid var(--accent);outline-offset:2px}
+  .pay-box{display:grid;grid-template-columns:170px 1fr;gap:18px;align-items:center;border:1px solid var(--line);border-radius:14px;padding:16px;margin-bottom:18px}
+  .pay-box img{width:100%;border-radius:12px}
+  .pay-amt{font-size:1rem}.pay-amt strong{font-size:1.5rem;color:#102a35;display:block}
+  .upi{display:flex;align-items:center;gap:8px;margin:6px 0 12px;background:var(--bg-soft);border-radius:10px;padding:8px 10px}
+  .upi code{flex:1;font-size:.95rem;word-break:break-all}
+  .upi button{border:0;background:#fff;border:1px solid var(--line);border-radius:8px;padding:6px 10px;font:600 .8rem Inter,sans-serif;cursor:pointer;color:var(--primary)}
+  .small{font-size:.8rem;color:var(--muted)}
+  .link-btn{background:none;border:0;color:var(--primary);font:600 .9rem Inter,sans-serif;cursor:pointer;margin-top:12px;display:block;margin-inline:auto}
+  .hold{background:#ecfdf3;border:1px solid #bbf7d0;color:#166534;border-radius:10px;padding:10px 14px;font-size:.88rem;margin-bottom:14px}
+  .form-err{color:var(--error);font-size:.88rem;margin-top:10px;text-align:center}
+  .ref{display:inline-block;background:var(--primary-soft);color:var(--primary-dark);font-weight:700;letter-spacing:.06em;padding:6px 14px;border-radius:999px;margin-bottom:10px}
+  /* Reviews */
+  .rev-grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:32px;margin-top:36px;align-items:start}
+  .score{background:#fff;border:1px solid var(--line);border-radius:20px;padding:28px;text-align:center}
+  .score .big{font-family:"Playfair Display",serif;font-size:3.6rem;font-weight:700;color:#102a35;line-height:1}
+  .stars{color:var(--accent);letter-spacing:2px;font-size:1.2rem}
+  .score p{color:var(--muted);font-size:.9rem;margin-top:6px}
+  .score .chips{justify-content:center}
+  .bars{background:#fff;border:1px solid var(--line);border-radius:20px;padding:28px;display:grid;grid-template-columns:1fr 1fr;gap:16px 28px}
+  .bar-row div:first-child{display:flex;justify-content:space-between;font-size:.9rem;font-weight:500}
+  .track{height:8px;border-radius:99px;background:var(--line);margin-top:6px;overflow:hidden}
+  .track i{display:block;height:100%;background:var(--primary);border-radius:99px}
+  .rev-cards{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:28px}
+  .rev-card{background:#fff;border:1px solid var(--line);border-radius:16px;padding:22px}
+  .rev-card p{color:var(--text);margin:8px 0 12px;font-size:.95rem}
+  .rev-card small{color:var(--muted)}
+  .rev-actions{display:flex;flex-wrap:wrap;gap:12px;justify-content:center;margin-top:28px}
+  .rev-form{max-width:640px;margin:28px auto 0}
+  .star-input{display:flex;flex-direction:row-reverse;justify-content:flex-end;gap:4px}
+  .star-input input{position:absolute;opacity:0}
+  .star-input label{font-size:1.9rem;color:#d3dbe0;cursor:pointer;margin:0;line-height:1}
+  .star-input input:checked ~ label,.star-input label:hover,.star-input label:hover ~ label{color:var(--accent)}
+  .star-input input:focus-visible + label{outline:3px solid var(--accent);border-radius:4px}
+  .check{display:flex;gap:10px;align-items:flex-start;font-weight:400;font-size:.88rem;color:var(--muted)}
+  .check input{width:auto;margin-top:4px}
+
+  /* Host */
+  .host{display:flex;gap:32px;align-items:center;background:#fff;border:1px solid var(--line);border-radius:20px;padding:32px}
+  .avatar{flex:none;width:120px;height:120px;border-radius:50%;background:var(--primary);color:#fff;display:grid;place-items:center;font-size:2.4rem;font-family:"Playfair Display",serif}
+
+  /* FAQ */
+  .faq{max-width:760px;margin:32px auto 0}
+  .faq-item{border-bottom:1px solid var(--line)}
+  .faq-q{width:100%;background:none;border:0;text-align:left;padding:18px 0;font:600 1rem Inter,sans-serif;color:var(--text);display:flex;justify-content:space-between;gap:16px;cursor:pointer}
+  .faq-q .plus{color:var(--primary);font-size:1.4rem;transition:transform .25s}
+  .faq-q[aria-expanded="true"] .plus{transform:rotate(45deg)}
+  .faq-a{max-height:0;overflow:hidden;transition:max-height .3s ease;color:var(--muted)}
+  .faq-a p{padding-bottom:18px}
+
+  /* Contact & footer */
+  .contact-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:32px}
+  .contact-grid .card{text-align:center}
+  .map-cta{margin-top:24px;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:16px;background:#fff;border:1px solid var(--line);border-radius:16px;padding:20px 24px}
+  .map-cta span{color:var(--muted);font-size:.9rem}
+  .notice{background:#fff7e6;border-bottom:1px solid #fde7b4;color:#7a4b00;text-align:center;font-size:.92rem;font-weight:500;padding:10px 20px}
+  .map{margin-top:28px;border-radius:16px;overflow:hidden;border:1px solid var(--line)}
+  .map iframe{width:100%;height:340px;border:0;display:block}
+  footer{background:#102a35;color:#cfdbe1;padding:40px 0 28px;font-size:.9rem}
+  .foot{display:flex;flex-wrap:wrap;justify-content:space-between;gap:20px}
+  footer a:hover{color:#fff}
+  .fine{border-top:1px solid rgba(255,255,255,.12);margin-top:24px;padding-top:18px;font-size:.78rem;color:#9fb2bb;display:flex;flex-wrap:wrap;justify-content:space-between;gap:10px}
+  .wa-float{position:fixed;right:18px;bottom:18px;z-index:40;width:56px;height:56px;border-radius:50%;background:#16a34a;color:#fff;display:grid;place-items:center;font-size:1.5rem;box-shadow:0 8px 20px rgba(0,0,0,.2)}
+
+  .reveal{opacity:0;transform:translateY(18px);transition:opacity .6s ease,transform .6s ease}
+  .reveal.in{opacity:1;transform:none}
+
+  @media (max-width:900px){
+    .nav-links,.nav .btn{display:none}
+    .menu-btn{display:block}
+    .hero-grid,.about-grid,.book-grid{grid-template-columns:1fr}
+    .stats{grid-template-columns:repeat(3,1fr);margin-top:0}
+    .grid-4{grid-template-columns:repeat(2,1fr)}
+    .gallery{grid-template-columns:repeat(2,1fr)}
+    .nearby,.contact-grid,.rev-grid{grid-template-columns:1fr}
+    .rev-cards{grid-template-columns:1fr}
+    .host{flex-direction:column;text-align:center}
+  }
+  @media (max-width:520px){
+    section{padding:56px 0}
+    .stats{grid-template-columns:repeat(2,1fr)}
+    .grid-4,.row,.bars{grid-template-columns:1fr}
+    .pay-box{grid-template-columns:1fr;text-align:center}
+    .pay-box img{max-width:220px;margin:0 auto}
+    .gallery{grid-auto-rows:130px}
+  }
+  @media (prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}.reveal{opacity:1;transform:none}}
+</style>
+</head>
+<body>
+
+<!-- ========== HEADER ========== -->
+<header>
+  <div class="container nav">
+    <a href="#top" class="brand">
+      <span class="logo">S</span>
+      <span><span data-bind="propertyName">Soft Petals</span><small>Udaipur · Rajasthan</small></span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#gallery">Photos</a></li>
+      <li><a href="#nearby">Nearby</a></li>
+      <li><a href="#reviews">Reviews</a></li>
+      <li><a href="#host">Host</a></li>
+      <li><a href="#faq">FAQ</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <a href="#book" class="btn btn-primary">Book now</a>
+    <button class="menu-btn" id="menuBtn" aria-label="Open menu" aria-expanded="false" aria-controls="drawer">
+      <svg width="26" height="26" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" d="M4 7h16M4 12h16M4 17h16"/></svg>
+    </button>
+  </div>
+</header>
+<div class="overlay" id="overlay"></div>
+<nav class="drawer" id="drawer" aria-label="Mobile menu" aria-hidden="true">
+  <button class="drawer-close" id="closeBtn" aria-label="Close menu">×</button>
+  <a href="#about">About</a><a href="#gallery">Photos</a><a href="#nearby">Nearby</a>
+  <a href="#reviews">Reviews</a><a href="#host">Host</a><a href="#faq">FAQ</a><a href="#contact">Contact</a>
+  <a href="#book" class="btn btn-primary">Book now</a>
+</nav>
+
+<div class="notice" id="notice" role="status" hidden></div>
+
+<main id="top">
+
+<!-- ========== HERO ========== -->
+<section class="hero">
+  <div class="container hero-grid">
+    <div class="reveal">
+      <span class="badge">★ <span data-bind="rating">4.83</span> · Guest favourite · Superhost</span>
+      <h1>Welcome to <span data-bind="propertyName">Soft Petals</span></h1>
+      <p>A luxurious 3-bedroom boutique home for up to 6 guests near Fateh Sagar Lake and Saheliyon ki Bari, with terrace views of the Maharana Pratap statue, Monsoon Palace and Neemach Mata temple. Free parking outside the premises.</p>
+      <div class="hero-actions">
+        <a href="#book" class="btn btn-primary">Book now</a>
+        <a href="#" data-link="whatsapp" target="_blank" rel="noopener" class="btn btn-outline">Chat on WhatsApp</a>
+      </div>
+    </div>
+    <div class="hero-img reveal">
+      <img fetchpriority="high" src="photos/p01-8cfb571e.jpg" alt="White heritage-style exterior of the home with jharokha balconies and gated entrance" style="width:100%;height:100%;object-fit:cover">
+      <div class="tag"><strong data-bind="priceText">₹6,888</strong>per night</div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== STATS ========== -->
+<div class="container">
+  <div class="stats reveal">
+    <div class="stat"><b><span data-bind="rating">4.83</span> ★</b><span>Guest rating</span></div>
+    <div class="stat"><b data-bind="reviewCount">132</b><span>Reviews</span></div>
+    <div class="stat"><b>Superhost</b><span>Verified host</span></div>
+    <div class="stat"><b>6</b><span>Guests max</span></div>
+    <div class="stat"><b>Free</b><span>Parking outside</span></div>
+  </div>
+</div>
+
+<!-- ========== ABOUT ========== -->
+<section id="about">
+  <div class="container about-grid">
+    <div class="reveal">
+      <span class="eyebrow">About the home</span>
+      <h2>Space for the whole group</h2>
+      <p class="lead">The whole group will be comfortable in this spacious and unique home. It's close to the famous Fateh Sagar Lake and Saheliyon ki Bari, and every major Udaipur attraction is a short drive away.</p>
+      <ul class="check-list">
+        <li>Entire home — 3 bedrooms, 3 beds, 3 bathrooms</li>
+        <li>Terrace with views of Moti Magri, Monsoon Palace &amp; Neemach Mata</li>
+        <li>Free parking outside the premises</li>
+        <li>Smooth, guest-praised check-in</li>
+        <li>Free cancellation on eligible dates</li>
+      </ul>
+      <ul class="chips">
+        <li>🍳 Kitchen</li><li>📶 Wi-Fi</li><li>💻 Workspace</li><li>📺 TV</li><li>🚗 Free parking outside</li>
+      </ul>
+    </div>
+    <div class="grid-4 reveal" style="grid-template-columns:1fr 1fr;margin-top:0">
+      <div class="card"><div class="icon">🛏️</div><h3>3 Bedrooms</h3><p>Private, boutique-styled rooms.</p></div>
+      <div class="card"><div class="icon">🛁</div><h3>3 Bathrooms</h3><p>One for every room.</p></div>
+      <div class="card"><div class="icon">🌄</div><h3>Terrace</h3><p>Sunrise and sunset views.</p></div>
+      <div class="card"><div class="icon">🏛️</div><h3>Extra spacious</h3><p>Loved by families and groups.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== GALLERY ========== -->
+<section id="gallery" class="soft">
+  <div class="container">
+    <div class="center reveal">
+      <span class="eyebrow">Photos</span>
+      <h2>Take a look inside</h2>
+    </div>
+    <div class="gallery reveal">
+      <button type="button" class="g big" aria-label="View photo: Living room with chandelier and red armchairs"><img src="photos/p02-b1274960.jpg" alt="Living room with chandelier and red armchairs" loading="lazy"></button>
+      <button type="button" class="g " aria-label="View photo: Bedroom with four-poster bed"><img src="photos/p03-82bdd32a.jpg" alt="Bedroom with four-poster bed" loading="lazy"></button>
+      <button type="button" class="g " aria-label="View photo: Bedroom with green bedding and wardrobe"><img src="photos/p04-d8f3fb55.jpg" alt="Bedroom with green bedding and wardrobe" loading="lazy"></button>
+      <button type="button" class="g " aria-label="View photo: Bedroom with window seat"><img src="photos/p05-93d90977.jpg" alt="Bedroom with window seat" loading="lazy"></button>
+      <button type="button" class="g " aria-label="View photo: Window seat and work desk"><img src="photos/p06-61b2c49b.jpg" alt="Window seat and work desk" loading="lazy"></button>
+      <button type="button" class="g wide" aria-label="View photo: Lounge with Pichwai cow murals"><img src="photos/p07-0b23daf2.jpg" alt="Lounge with Pichwai cow murals" loading="lazy"></button>
+      <button type="button" class="g wide" aria-label="View photo: Marble dining table for six"><img src="photos/p08-f3b977b2.jpg" alt="Marble dining table for six" loading="lazy"></button>
+      <button type="button" class="g " aria-label="View photo: Bathroom with vanity"><img src="photos/p09-56e5ff59.jpg" alt="Bathroom with vanity" loading="lazy"></button>
+      <button type="button" class="g " aria-label="View photo: Bathroom with pebble-stone wall"><img src="photos/p10-aa447570.jpg" alt="Bathroom with pebble-stone wall" loading="lazy"></button>
+      <button type="button" class="g " aria-label="View photo: Glass shower with pebble tiles"><img src="photos/p11-c7b6416c.jpg" alt="Glass shower with pebble tiles" loading="lazy"></button>
+      <button type="button" class="g " aria-label="View photo: Bathroom with stained-glass reflection"><img src="photos/p12-0ddcafb4.jpg" alt="Bathroom with stained-glass reflection" loading="lazy"></button>
+      <button type="button" class="g " aria-label="View photo: Stone wall and folk art"><img src="photos/p13-7dad4a52.jpg" alt="Stone wall and folk art" loading="lazy"></button>
+      <button type="button" class="g " aria-label="View photo: Sculpture in the lounge"><img src="photos/p14-93fcae6e.jpg" alt="Sculpture in the lounge" loading="lazy"></button>
+      <button type="button" class="g " aria-label="View photo: Shrinathji shrine"><img src="photos/p15-05e75bff.jpg" alt="Shrinathji shrine" loading="lazy"></button>
+      <button type="button" class="g " aria-label="View photo: Floral welcome at the entrance"><img src="photos/p16-fafc7349.jpg" alt="Floral welcome at the entrance" loading="lazy"></button>
+    </div>
+    <p class="lead center" style="margin:18px auto 0;font-size:.9rem">Tap any photo to view it full size.</p>
+  </div>
+</section>
+
+<!-- ========== NEARBY ========== -->
+<section id="nearby">
+  <div class="container">
+    <div class="center reveal">
+      <span class="eyebrow">Location</span>
+      <h2>Udaipur at your doorstep</h2>
+      <p class="lead">Approximate distances from the Fateh Sagar Lake area.</p>
+    </div>
+    <ul class="nearby reveal">
+      <li>Fateh Sagar Lake <span>Minutes away</span></li>
+      <li>Saheliyon ki Bari <span>≈ 1 km</span></li>
+      <li>Moti Magri (Maharana Pratap Memorial) <span>≈ 5 min</span></li>
+      <li>Neemach Mata Temple &amp; Ropeway <span>≈ 5–10 min</span></li>
+      <li>Shilpgram crafts village <span>≈ 3 km</span></li>
+      <li>Bagore ki Haveli <span>≈ 2–3 km</span></li>
+      <li>City Palace &amp; Jagdish Temple <span>≈ 3–5 km</span></li>
+      <li>Lake Pichola &amp; Ambrai Ghat <span>≈ 3–4 km</span></li>
+      <li>Monsoon Palace (Sajjangarh) <span>≈ 7–10 km</span></li>
+      <li>Udaipur City Railway Station <span>≈ 5–6 km</span></li>
+      <li>Maharana Pratap Airport <span>≈ 22–25 km</span></li>
+      <li>Best season <span>Oct – Mar</span></li>
+    </ul>
+  </div>
+</section>
+
+<!-- ========== BOOKING ========== -->
+<section id="book" class="soft">
+  <div class="container book-grid">
+    <div class="reveal">
+      <span class="eyebrow">Book direct</span>
+      <h2>Book your stay</h2>
+      <p class="price"><span data-bind="priceText">₹6,888</span> <small>/ night</small></p>
+      <p class="lead">Book directly with Digvijay and pay by UPI — no booking-platform fees.</p>
+      <ol class="how">
+        <li><b>Choose dates and guests</b><span>See your total straight away.</span></li>
+        <li><b>Pay by UPI</b><span>Scan the QR code or tap to open your UPI app.</span></li>
+        <li><b>Get confirmation</b><span>Digvijay checks the payment and confirms by WhatsApp and email.</span></li>
+      </ol>
+      <ul class="check-list">
+        <li>Entire home for up to 6 guests</li>
+        <li>Free parking outside the premises</li>
+        <li>Rare find — this home is usually booked, so book early</li>
+      </ul>
+    </div>
+
+    <div class="form-card reveal" id="bookCard">
+      <div class="steps" aria-hidden="true"><span class="on">1 · Details</span><span>2 · Payment</span><span>3 · Done</span></div>
+
+      <!-- STEP 1: details -->
+      <form id="bookingForm" novalidate>
+        <input type="text" name="_gotcha" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true">
+        <div class="row">
+          <div class="field"><label for="checkin">Check-in *</label><input type="date" id="checkin" name="checkin"><div class="err" id="err-checkin"></div></div>
+          <div class="field"><label for="checkout">Check-out *</label><input type="date" id="checkout" name="checkout"><div class="err" id="err-checkout"></div></div>
+        </div>
+        <p class="small" id="bookedNote" hidden style="margin:-6px 0 12px"></p>
+        <div class="field"><label for="guests">Guests *</label>
+          <select id="guests" name="guests"><option>1</option><option selected>2</option><option>3</option><option>4</option><option>5</option><option>6</option></select>
+        </div>
+        <div class="estimate" aria-live="polite">
+          <div><span id="estLine">Select dates to see your total</span><span id="estSub"></span></div>
+          <div class="total"><span>Total</span><span id="estTotal">—</span></div>
+        </div>
+        <div class="field"><label for="name">Full name *</label><input type="text" id="name" name="name" autocomplete="name" placeholder="Your name"><div class="err" id="err-name"></div></div>
+        <div class="row">
+          <div class="field"><label for="phone">Phone / WhatsApp *</label><input type="tel" id="phone" name="phone" autocomplete="tel" placeholder="+91 98765 43210"><div class="err" id="err-phone"></div></div>
+          <div class="field"><label for="email">Email *</label><input type="email" id="email" name="email" autocomplete="email" placeholder="you@example.com"><div class="err" id="err-email"></div></div>
+        </div>
+        <div class="field"><label for="message">Message (optional)</label><textarea id="message" name="message" rows="3" placeholder="Arrival time, special requests…"></textarea></div>
+        <button type="submit" class="btn btn-primary" style="width:100%" id="contBtn">Continue to payment →</button>
+        <p class="form-err" id="err-hold" role="alert"></p>
+        <p class="note">Your details are used only for this booking.</p>
+      </form>
+
+      <!-- STEP 2: payment -->
+      <div id="payStep" hidden>
+        <p class="hold" id="holdNote" hidden></p>
+        <div class="summary" id="summary"></div>
+        <fieldset class="pay-opt">
+          <legend>How much would you like to pay now?</legend>
+          <div class="opts">
+            <label class="opt"><input type="radio" name="payAmt" value="advance" checked><span><b id="advLabel">50% advance</b><em id="advAmt"></em></span></label>
+            <label class="opt"><input type="radio" name="payAmt" value="full"><span><b>Full amount</b><em id="fullAmt"></em></span></label>
+          </div>
+        </fieldset>
+        <div class="pay-box">
+          <img src="photos/upi-qr-abeba09e.png" alt="UPI QR code for Digvijay Singh Jhala">
+          <div>
+            <p class="pay-amt">Amount to pay<strong id="payNow"></strong></p>
+            <p class="small">UPI ID</p>
+            <div class="upi"><code id="upiId"></code><button type="button" id="copyUpi">Copy</button></div>
+            <a href="#" id="upiLink" class="btn btn-primary" style="width:100%">Pay with UPI app</a>
+            <p class="small" style="margin-top:8px">On a phone, tap the button. On a computer, scan the QR code with Paytm, PhonePe, Google Pay or BHIM and enter the amount shown.</p>
+          </div>
+        </div>
+        <div class="field"><label for="utr">UPI transaction ID / reference number *</label><input type="text" id="utr" inputmode="numeric" autocomplete="off" placeholder="e.g. 12-digit UPI Ref No."><div class="err" id="err-utr"></div></div>
+        <button type="button" id="confirmBtn" class="btn btn-primary" style="width:100%">I've paid — confirm my booking</button>
+        <p class="form-err" id="err-confirm" role="alert"></p>
+        <button type="button" id="backBtn" class="link-btn">← Change details</button>
+        <p class="note">Your booking is final once Digvijay has checked the payment and availability. If your dates aren't available, your payment is refunded in full.</p>
+      </div>
+
+      <!-- STEP 3: done -->
+      <div class="success" id="success" role="status" tabindex="-1" hidden style="display:block">
+        <div class="tick">✓</div>
+        <span class="ref" id="bookRef"></span>
+        <h3>Booking received!</h3>
+        <p class="lead" id="successMsg" style="margin:8px auto 18px"></p>
+        <a href="#" id="waConfirm" target="_blank" rel="noopener" class="btn btn-wa">Send details on WhatsApp</a>
+        <p><button type="button" id="newReq" class="btn btn-outline" style="margin-top:12px">Make another booking</button></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== HOST ========== -->
+<section id="host">
+  <div class="container">
+    <div class="host reveal">
+      <!-- Replace with <img src="photos/host.jpg" alt="Digvijay Singh Jhala" class="avatar" style="object-fit:cover"> -->
+      <div class="avatar">DJ</div>
+      <div>
+        <span class="eyebrow">Your host</span>
+        <h2>Digvijay Singh Jhala</h2>
+        <p class="lead">Superhost with 4 years of hosting experience and a <span data-bind="rating">4.83</span> rating from <span data-bind="reviewCount">132</span> guest reviews. Quick to reply and happy to share local tips for exploring the City of Lakes.</p>
+        <div class="hero-actions" style="margin-top:18px">
+          <a href="#" data-link="phone" class="btn btn-primary">Call host</a>
+          <a href="#" data-link="whatsapp" target="_blank" rel="noopener" class="btn btn-outline">WhatsApp</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== REVIEWS ========== -->
+<section id="reviews" class="soft">
+  <div class="container">
+    <div class="center reveal">
+      <span class="eyebrow">Reviews</span>
+      <h2>What guests say</h2>
+      <p class="lead">Rated <span data-bind="rating">4.83</span> out of 5 by <span data-bind="reviewCount">132</span> guests on Airbnb, where this home is a Guest favourite.</p>
+    </div>
+    <div class="rev-grid reveal">
+      <div class="score">
+        <div class="big" data-bind="rating">4.83</div>
+        <div class="stars" aria-label="4.83 out of 5 stars">★★★★★</div>
+        <p><span data-bind="reviewCount">132</span> reviews · Guest favourite</p>
+        <p>89% of reviews are 5 stars</p>
+        <ul class="chips"><li>Smooth check-in</li><li>Extra spacious</li><li>Free parking outside</li></ul>
+      </div>
+      <div class="bars">
+        <div class="bar-row"><div><span>Cleanliness</span><span>4.9</span></div><div class="track"><i style="width:98%"></i></div></div>
+        <div class="bar-row"><div><span>Communication</span><span>4.9</span></div><div class="track"><i style="width:98%"></i></div></div>
+        <div class="bar-row"><div><span>Accuracy</span><span>4.8</span></div><div class="track"><i style="width:96%"></i></div></div>
+        <div class="bar-row"><div><span>Check-in</span><span>4.8</span></div><div class="track"><i style="width:96%"></i></div></div>
+        <div class="bar-row"><div><span>Value</span><span>4.8</span></div><div class="track"><i style="width:96%"></i></div></div>
+        <div class="bar-row"><div><span>Location</span><span>4.6</span></div><div class="track"><i style="width:92%"></i></div></div>
+      </div>
+    </div>
+
+    <!-- Guest review cards are filled from the REVIEWS list in the script settings -->
+    <div class="rev-cards reveal" id="revCards" hidden></div>
+
+    <div class="rev-actions reveal">
+      <a href="#" data-link="airbnb" target="_blank" rel="noopener" class="btn btn-outline">Read all <span data-bind="reviewCount">132</span> reviews on Airbnb ↗</a>
+      <button type="button" class="btn btn-primary" id="writeRev" aria-expanded="false" aria-controls="revFormWrap">Write a review</button>
+    </div>
+
+    <div class="rev-form form-card" id="revFormWrap" hidden>
+      <form id="revForm" novalidate>
+        <input type="text" name="_gotcha" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true">
+        <h3 style="margin-bottom:14px">Stayed with us? Share your experience</h3>
+        <div class="field"><label id="ratingLabel">Your rating *</label>
+          <div class="star-input" role="radiogroup" aria-labelledby="ratingLabel">
+            <input type="radio" id="r5" name="rating" value="5"><label for="r5" title="5 stars">★</label>
+            <input type="radio" id="r4" name="rating" value="4"><label for="r4" title="4 stars">★</label>
+            <input type="radio" id="r3" name="rating" value="3"><label for="r3" title="3 stars">★</label>
+            <input type="radio" id="r2" name="rating" value="2"><label for="r2" title="2 stars">★</label>
+            <input type="radio" id="r1" name="rating" value="1"><label for="r1" title="1 star">★</label>
+          </div>
+          <div class="err" id="err-rating"></div>
+        </div>
+        <div class="row">
+          <div class="field"><label for="rvName">Your name *</label><input type="text" id="rvName" autocomplete="name"><div class="err" id="err-rvName"></div></div>
+          <div class="field"><label for="rvWhen">Month of stay</label><input type="text" id="rvWhen" placeholder="e.g. January 2026"></div>
+        </div>
+        <div class="field"><label for="rvText">Your review *</label><textarea id="rvText" rows="4" placeholder="What did you enjoy about your stay?"></textarea><div class="err" id="err-rvText"></div></div>
+        <label class="check"><input type="checkbox" id="rvOk" checked> You may show my first name and review on this website.</label>
+        <button type="submit" class="btn btn-primary" style="width:100%;margin-top:16px" id="rvBtn">Send review</button>
+      </form>
+      <div class="success" id="revDone" role="status" tabindex="-1" hidden style="display:block">
+        <div class="tick">✓</div>
+        <h3>Thank you for your review!</h3>
+        <p class="lead" id="revDoneMsg" style="margin:8px auto 0"></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== FAQ ========== -->
+<section id="faq">
+  <div class="container">
+    <div class="center reveal"><span class="eyebrow">FAQ</span><h2>Good to know</h2></div>
+    <div class="faq reveal">
+      <div class="faq-item"><button class="faq-q" aria-expanded="false">What are the check-in and check-out times?<span class="plus">+</span></button><div class="faq-a"><p>Check-in from 1:00 PM, check-out by 11:00 AM. (Host: update these times.) Early check-in or late check-out can be requested.</p></div></div>
+      <div class="faq-item"><button class="faq-q" aria-expanded="false">Is parking available?<span class="plus">+</span></button><div class="faq-a"><p>Yes, free parking is available just outside the premises.</p></div></div>
+      <div class="faq-item"><button class="faq-q" aria-expanded="false">How many guests can stay?<span class="plus">+</span></button><div class="faq-a"><p>Up to 6 guests across 3 bedrooms with 3 bathrooms.</p></div></div>
+      <div class="faq-item"><button class="faq-q" aria-expanded="false">How do I pay?<span class="plus">+</span></button><div class="faq-a"><p>Book on this website and pay by UPI (Paytm, PhonePe, Google Pay or BHIM) — either a 50% advance or the full amount. Digvijay confirms once the payment is checked. You can also book through Airbnb if you prefer.</p></div></div>
+      <div class="faq-item"><button class="faq-q" aria-expanded="false">Can you arrange airport or station pickup?<span class="plus">+</span></button><div class="faq-a"><p>Ask the host when you book. The airport is about 22–25 km away and the railway station about 5–6 km.</p></div></div>
+      <div class="faq-item"><button class="faq-q" aria-expanded="false">What is the cancellation policy?<span class="plus">+</span></button><div class="faq-a"><p>Free cancellation is available on eligible dates. Exact terms are confirmed before payment.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== CONTACT ========== -->
+<section id="contact" class="soft">
+  <div class="container">
+    <div class="center reveal"><span class="eyebrow">Contact</span><h2>Get in touch</h2></div>
+    <div class="contact-grid reveal">
+      <a href="#" data-link="phone" class="card"><div class="icon" style="margin:0 auto 12px">📞</div><h3>Phone</h3><p data-bind="phoneDisplay">+91 XXXXX XXXXX</p></a>
+      <a href="#" data-link="whatsapp" target="_blank" rel="noopener" class="card"><div class="icon" style="margin:0 auto 12px">💬</div><h3>WhatsApp</h3><p>Fastest reply</p></a>
+      <a href="#" data-link="email" class="card"><div class="icon" style="margin:0 auto 12px">✉️</div><h3>Email</h3><p data-bind="email">your-email@example.com</p></a>
+    </div>
+    <div class="map-cta reveal">
+      <p><b>📍 Near Fateh Sagar Lake, Udaipur</b><br><span>The exact address is shared after booking.</span></p>
+      <a href="#" data-link="maps" target="_blank" rel="noopener" class="btn btn-outline">Open in Google Maps ↗</a>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="container">
+    <div class="foot">
+      <div>
+        <strong style="color:#fff;font-size:1.1rem" data-bind="propertyName">Soft Petals</strong>
+        <p>Near Fateh Sagar Lake, Udaipur, Rajasthan</p>
+      </div>
+      <div>
+        <p><a href="#" data-link="phone">📞 <span data-bind="phoneDisplay">+91 XXXXX XXXXX</span></a></p>
+        <p><a href="#" data-link="email">✉️ <span data-bind="email">your-email@example.com</span></a></p>
+        <p><a href="#" data-link="airbnb" target="_blank" rel="noopener">★ <span data-bind="rating">4.83</span> on Airbnb ↗</a></p>
+      </div>
+    </div>
+    <div class="fine">
+      <span>© <span id="year"></span> <span data-bind="propertyName">Soft Petals</span>. All rights reserved.</span>
+      <span>Independent host website. Not affiliated with Airbnb.</span>
+    </div>
+  </div>
+</footer>
+
+<div class="lb" id="lb" role="dialog" aria-modal="true" aria-label="Photo viewer">
+  <button class="lb-close" id="lbClose" aria-label="Close">×</button>
+  <button class="lb-prev" id="lbPrev" aria-label="Previous photo">‹</button>
+  <figure><img id="lbImg" alt=""><figcaption id="lbCap"></figcaption></figure>
+  <button class="lb-next" id="lbNext" aria-label="Next photo">›</button>
+</div>
+
+<a href="#" data-link="whatsapp" target="_blank" rel="noopener" class="wa-float" aria-label="Chat on WhatsApp">💬</a>
+
+<script>
+/* ============================================================
+   BUSINESS SETTINGS — edit only this block
+   ============================================================ */
+const CONFIG = {
+  propertyName: "Soft Petals",
+  phoneDisplay: "+91 90013 05559",
+  phoneLink:    "+919001305559",
+  whatsapp:     "919001305559",          // country code + number, no "+"
+  email:        "dsjhala@yahoo.com",
+  airbnbUrl:    "https://www.airbnb.com/rooms/662140148005538723",
+  mapsUrl:      "https://www.google.com/maps/search/?api=1&query=Fateh+Sagar+Lake+Udaipur",
+  nightlyRate:  6888,                    // ₹ per night
+  maxGuests:    6,
+  rating:       "4.83",
+  reviewCount:  "132",
+  announcement: "",                      // e.g. "Diwali offer: 10% off stays of 3+ nights"
+  bookedDates:  [],                      // e.g. [["2026-12-20","2026-12-23"]] = booked from 20 Dec, check-out 23 Dec
+  // UPI payment
+  upiId:        "9829166074@ptsbi",
+  upiName:      "DIGVIJAY SINGH JHALA",
+  advancePercent: 50,                    // advance option shown at checkout
+  // Bookings and reviews are emailed here via FormSubmit (free).
+  // The FIRST submission sends an activation email to dsjhala@yahoo.com: click "Activate Form" once.
+  formEndpoint: "https://formsubmit.co/ajax/dsjhala@yahoo.com",
+  // LIVE UPDATES: paste the "Publish to web" CSV link of the Google Sheet here.
+  // Whatever is in the sheet (price, rating, notice, booked dates, reviews…) replaces the values above.
+  sheetUrl:     ""
+};
+
+/* Guest reviews shown on the site. Add real reviews (with the guest's permission), e.g.
+   { name: "Priya", date: "January 2026", rating: 5, text: "Lovely, spacious home…" }, */
+const REVIEWS = [
+];
+
+(function(){
+  const $ = s => document.querySelector(s), $$ = s => [...document.querySelectorAll(s)];
+  const inr = n => "₹" + n.toLocaleString("en-IN");
+
+  /* Fill in business details (re-run whenever settings change) */
+  const wa = text => "https://wa.me/" + CONFIG.whatsapp + "?text=" + encodeURIComponent(text);
+  function applyConfig(){
+    CONFIG.priceText = inr(Number(CONFIG.nightlyRate));
+    $$("[data-bind]").forEach(el => { const v = CONFIG[el.dataset.bind]; if (v !== undefined && v !== "") el.textContent = v; });
+    const links = {
+      phone: "tel:" + CONFIG.phoneLink,
+      whatsapp: wa("Namaste! I'd like to enquire about " + CONFIG.propertyName + "."),
+      email: "mailto:" + CONFIG.email + "?subject=" + encodeURIComponent("Booking enquiry – " + CONFIG.propertyName),
+      airbnb: CONFIG.airbnbUrl,
+      maps: CONFIG.mapsUrl
+    };
+    $$("[data-link]").forEach(a => { if (links[a.dataset.link]) a.href = links[a.dataset.link]; });
+    document.title = CONFIG.propertyName + " | 3-Bedroom Home near Fateh Sagar Lake, Udaipur";
+    const n = $("#notice"); n.textContent = CONFIG.announcement || ""; n.hidden = !CONFIG.announcement;
+    $("#upiId").textContent = CONFIG.upiId;
+    $("#advLabel").textContent = CONFIG.advancePercent + "% advance";
+    const g = $("#guests"), cur = g.value; g.innerHTML = "";
+    for (let i = 1; i <= Number(CONFIG.maxGuests); i++) g.add(new Option(i, i));
+    g.value = Math.min(Number(cur) || 2, Number(CONFIG.maxGuests));
+  }
+  applyConfig();
+  $("#year").textContent = new Date().getFullYear();
+
+  /* Mobile menu */
+  const drawer = $("#drawer"), overlay = $("#overlay"), menuBtn = $("#menuBtn");
+  const openMenu = () => { drawer.classList.add("open"); overlay.classList.add("show"); drawer.setAttribute("aria-hidden","false"); menuBtn.setAttribute("aria-expanded","true"); document.body.style.overflow="hidden"; };
+  const closeMenu = () => { drawer.classList.remove("open"); overlay.classList.remove("show"); drawer.setAttribute("aria-hidden","true"); menuBtn.setAttribute("aria-expanded","false"); document.body.style.overflow=""; };
+  menuBtn.onclick = openMenu; $("#closeBtn").onclick = closeMenu; overlay.onclick = closeMenu;
+  $$("#drawer a").forEach(a => a.addEventListener("click", closeMenu));
+  document.addEventListener("keydown", e => { if (e.key === "Escape") closeMenu(); });
+
+  /* Reveal on scroll */
+  const io = new IntersectionObserver(es => es.forEach(e => { if (e.isIntersecting){ e.target.classList.add("in"); io.unobserve(e.target);} }), {threshold:.12});
+  $$(".reveal").forEach(el => io.observe(el));
+
+  /* Photo viewer */
+  const tiles = $$(".g"), lb = $("#lb"), lbImg = $("#lbImg"), lbCap = $("#lbCap");
+  let cur = 0, lastFocus = null;
+  const show = i => { cur = (i + tiles.length) % tiles.length; const im = tiles[cur].querySelector("img"); lbImg.src = im.src; lbImg.alt = im.alt; lbCap.textContent = im.alt + "  ·  " + (cur+1) + " / " + tiles.length; };
+  const openLb = i => { lastFocus = document.activeElement; show(i); lb.classList.add("open"); document.body.style.overflow = "hidden"; $("#lbClose").focus(); };
+  const closeLb = () => { lb.classList.remove("open"); document.body.style.overflow = ""; if (lastFocus) lastFocus.focus(); };
+  tiles.forEach((t, i) => t.addEventListener("click", () => openLb(i)));
+  $("#lbClose").onclick = closeLb; $("#lbPrev").onclick = () => show(cur-1); $("#lbNext").onclick = () => show(cur+1);
+  lb.addEventListener("click", e => { if (e.target === lb) closeLb(); });
+  document.addEventListener("keydown", e => { if (!lb.classList.contains("open")) return;
+    if (e.key === "Escape") closeLb(); if (e.key === "ArrowLeft") show(cur-1); if (e.key === "ArrowRight") show(cur+1); });
+  let sx = 0; lb.addEventListener("touchstart", e => sx = e.touches[0].clientX, {passive:true});
+  lb.addEventListener("touchend", e => { const dx = e.changedTouches[0].clientX - sx; if (Math.abs(dx) > 50) show(cur + (dx < 0 ? 1 : -1)); });
+
+  /* FAQ */
+  $$(".faq-q").forEach(q => q.addEventListener("click", () => {
+    const open = q.getAttribute("aria-expanded") === "true", a = q.nextElementSibling;
+    q.setAttribute("aria-expanded", !open);
+    a.style.maxHeight = open ? null : a.scrollHeight + "px";
+  }));
+
+  /* Email via form service */
+  async function sendEmail(subject, data){
+    if (!CONFIG.formEndpoint) return false;
+    try {
+      const res = await fetch(CONFIG.formEndpoint, { method:"POST", headers:{ "Content-Type":"application/json", "Accept":"application/json" },
+        body: JSON.stringify(Object.assign({ _subject: subject, _template: "table", _captcha: "false" }, data)) });
+      const j = await res.json().catch(() => ({}));
+      return res.ok && String(j.success) !== "false";
+    } catch (e) { return false; }
+  }
+  const fmtDate = v => new Date(v + "T00:00:00").toLocaleDateString("en-IN", { day:"numeric", month:"short", year:"numeric" });
+  const plural = (n, w) => n + " " + w + (n > 1 ? "s" : "");
+
+  /* Dates & total */
+  const ci = $("#checkin"), co = $("#checkout"), guests = $("#guests");
+  const iso = d => new Date(d - d.getTimezoneOffset()*60000).toISOString().slice(0,10);
+  const parse = v => v ? new Date(v + "T00:00:00") : null;
+  const today = new Date(); today.setHours(0,0,0,0);
+  ci.min = iso(today); co.min = iso(new Date(today.getTime() + 864e5));
+  const nights = () => { const a = parse(ci.value), b = parse(co.value); return a && b && b > a ? Math.round((b-a)/864e5) : 0; };
+  function estimate(){
+    const n = nights();
+    if (!n){ $("#estLine").textContent = "Select dates to see your total"; $("#estSub").textContent = ""; $("#estTotal").textContent = "—"; return; }
+    $("#estLine").textContent = inr(CONFIG.nightlyRate) + " × " + plural(n, "night");
+    $("#estSub").textContent = inr(CONFIG.nightlyRate*n);
+    $("#estTotal").textContent = inr(CONFIG.nightlyRate*n);
+  }
+  ci.addEventListener("change", () => {
+    const a = parse(ci.value); if (!a) return;
+    co.min = iso(new Date(a.getTime() + 864e5));
+    if (!parse(co.value) || parse(co.value) <= a) co.value = iso(new Date(a.getTime() + 2*864e5));
+    estimate();
+  });
+  co.addEventListener("change", () => { estimate(); if (co.value) check("checkout"); });
+
+  /* Booked dates */
+  const dayAfter = d => new Date(d.getTime() + 864e5);
+  const API = /^https?:$/.test(location.protocol) ? "/api" : "";   // live booking server (when hosted)
+  let serverBooked = [];
+  const bookedRanges = () => (CONFIG.bookedDates || []).concat(serverBooked).map(r => {
+    const a = parse(Array.isArray(r) ? r[0] : r), b = Array.isArray(r) && r[1] ? parse(r[1]) : dayAfter(a);
+    return a && b && b > a ? [a, b] : null; }).filter(Boolean);
+  const rangeText = ([a, b]) => { const last = new Date(b.getTime() - 864e5);
+    return +a === +last ? fmtDate(iso(a)) : fmtDate(iso(a)) + " – " + fmtDate(iso(last)); };
+  const clashWith = (a, b) => { const r = bookedRanges().find(([s, e]) => a < e && s < b); return r ? rangeText(r) : ""; };
+  function showBooked(){
+    const up = bookedRanges().filter(([, e]) => e > today).sort((x, y) => x[0] - y[0]);
+    const note = $("#bookedNote"); note.hidden = !up.length;
+    note.textContent = up.length ? "Booked nights: " + up.map(rangeText).join(", ") : "";
+  }
+  showBooked();
+  async function loadAvailability(){
+    if (!API) return;
+    try { const r = await fetch(API + "/availability", { cache:"no-store" }); if (!r.ok) return;
+      serverBooked = (await r.json()).booked || []; showBooked(); } catch (e) {}
+  }
+  loadAvailability();
+  async function api(path, body){
+    const r = await fetch(API + path, { method:"POST", headers:{ "Content-Type":"application/json" }, body: JSON.stringify(body) });
+    let data = {}; try { data = await r.json(); } catch (e) {}
+    return { status: r.status, data };
+  }
+
+  /* Validation */
+  const rules = {
+    checkin:  () => (parse(ci.value) && parse(ci.value) >= today) || "Choose a check-in date.",
+    checkout: () => { if (!(nights() > 0)) return "Check-out must be after check-in.";
+      const clash = clashWith(parse(ci.value), parse(co.value));
+      return !clash || "Sorry, " + clash + " is already booked. Please choose other dates."; },
+    name:     () => $("#name").value.trim().length >= 2 || "Please enter your name.",
+    phone:    () => { const d = $("#phone").value.replace(/\D/g,""); return (d.length >= 10 && d.length <= 15) || "Enter a valid phone number."; },
+    email:    () => /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test($("#email").value.trim()) || "Enter a valid email.",
+    utr:      () => /^[A-Za-z0-9]{8,22}$/.test($("#utr").value.replace(/\s/g,"")) || "Enter the UPI reference number from your payment app."
+  };
+  const check = id => {
+    const r = rules[id](), ok = r === true, el = $("#" + id);
+    el.classList.toggle("invalid", !ok); el.setAttribute("aria-invalid", !ok);
+    $("#err-" + id).textContent = ok ? "" : r;
+    return ok;
+  };
+  Object.keys(rules).forEach(id => $("#" + id).addEventListener("blur", () => { if ($("#" + id).value) check(id); }));
+
+  /* Booking flow */
+  const form = $("#bookingForm"), payStep = $("#payStep"), done = $("#success"), card = $("#bookCard");
+  const stepTabs = $$(".steps span");
+  const setStep = n => { stepTabs.forEach((s, i) => s.classList.toggle("on", i < n)); card.scrollIntoView({ behavior:"smooth", block:"start" }); };
+  let booking = null;
+  form.addEventListener("submit", async e => {
+    e.preventDefault();
+    if (form._gotcha.value) return;
+    $("#err-hold").textContent = "";
+    const ok = ["checkin","checkout","name","phone","email"].map(check).every(Boolean);
+    if (!ok){ const f = form.querySelector(".invalid"); if (f) f.focus(); return; }
+    const n = nights(), total = CONFIG.nightlyRate * n;
+    let ref = "SP-" + ci.value.replace(/-/g,"").slice(2) + "-" + Math.random().toString(36).slice(2,6).toUpperCase(), held = false;
+    if (API) {
+      const b = $("#contBtn"); b.disabled = true; b.textContent = "Checking availability…";
+      let r; try { r = await api("/hold", { checkin: ci.value, checkout: co.value, guests: guests.value }); } catch (err) { r = { status: 0, data: {} }; }
+      b.disabled = false; b.textContent = "Continue to payment →";
+      if (r.status === 409) {
+        await loadAvailability(); check("checkout");
+        if (!$("#err-checkout").textContent) $("#err-checkout").textContent = "Sorry, these dates were just booked. Please choose other dates.";
+        $("#checkout").focus(); return;
+      }
+      if (r.status !== 200) { $("#err-hold").textContent = (r.data.error || "We couldn't check availability right now.") + " You can also book on WhatsApp."; return; }
+      ref = r.data.ref; held = true;
+    }
+    booking = {
+      ref,
+      name: $("#name").value.trim(), phone: $("#phone").value.trim(), email: $("#email").value.trim(),
+      checkin: ci.value, checkout: co.value, nights: n, guests: guests.value, total, message: $("#message").value.trim()
+    };
+    $("#summary").innerHTML = "";
+    [["Dates", fmtDate(booking.checkin) + " → " + fmtDate(booking.checkout)], ["Guests", booking.guests],
+     [inr(CONFIG.nightlyRate) + " × " + plural(n, "night"), inr(total)]].forEach(([k, v]) => {
+      const d = document.createElement("div"); d.innerHTML = "<span></span><span></span>";
+      d.children[0].textContent = k; d.children[1].textContent = v; $("#summary").appendChild(d);
+    });
+    const t = document.createElement("div"); t.className = "total"; t.innerHTML = "<span>Total</span><span></span>";
+    t.children[1].textContent = inr(total); $("#summary").appendChild(t);
+    $("#advAmt").textContent = inr(Math.ceil(total * CONFIG.advancePercent / 100));
+    $("#fullAmt").textContent = inr(total);
+    updatePay();
+    $("#holdNote").hidden = !held;
+    $("#holdNote").textContent = held ? "✓ These dates are held for you for 30 minutes while you pay." : "";
+    $("#err-confirm").textContent = "";
+    form.hidden = true; payStep.hidden = false; setStep(2);
+  });
+
+  const payAmount = () => {
+    const full = form.closest(".form-card").querySelector('input[name="payAmt"]:checked').value === "full";
+    return { full, amt: full ? booking.total : Math.ceil(booking.total * CONFIG.advancePercent / 100) };
+  };
+  function updatePay(){
+    const { amt } = payAmount();
+    $("#payNow").textContent = inr(amt);
+    $("#upiLink").href = "upi://pay?pa=" + CONFIG.upiId + "&pn=" + encodeURIComponent(CONFIG.upiName) +
+      "&am=" + amt.toFixed(2) + "&cu=INR&tn=" + encodeURIComponent("Booking " + booking.ref);
+  }
+  $$('input[name="payAmt"]').forEach(r => r.addEventListener("change", updatePay));
+
+  $("#copyUpi").addEventListener("click", async () => {
+    const b = $("#copyUpi");
+    try { await navigator.clipboard.writeText(CONFIG.upiId); }
+    catch (e) { const t = document.createElement("textarea"); t.value = CONFIG.upiId; document.body.appendChild(t); t.select(); document.execCommand("copy"); t.remove(); }
+    b.textContent = "Copied ✓"; setTimeout(() => b.textContent = "Copy", 1800);
+  });
+  $("#backBtn").addEventListener("click", () => { payStep.hidden = true; form.hidden = false; setStep(1); });
+
+  $("#confirmBtn").addEventListener("click", async () => {
+    if (!check("utr")) { $("#utr").focus(); return; }
+    const { full, amt } = payAmount(), btn = $("#confirmBtn");
+    Object.assign(booking, { paymentType: full ? "Full amount" : CONFIG.advancePercent + "% advance", paid: amt,
+      balance: booking.total - amt, utr: $("#utr").value.replace(/\s/g,"") });
+    btn.disabled = true; btn.textContent = "Confirming…"; $("#err-confirm").textContent = "";
+    if (API) {
+      let r; try { r = await api("/confirm", { ref: booking.ref, checkin: booking.checkin, checkout: booking.checkout, guests: booking.guests, utr: booking.utr }); }
+      catch (err) { r = { status: 0, data: {} }; }
+      if (r.status === 409) {
+        booking.clash = true;
+        await sendEmail("⚠ REFUND NEEDED – " + booking.ref + " – dates already taken", {
+          "Booking reference": booking.ref, "Guest name": booking.name, "Phone": booking.phone, "email": booking.email,
+          "Dates": fmtDate(booking.checkin) + " to " + fmtDate(booking.checkout), "Amount paid": inr(booking.paid), "UPI reference": booking.utr,
+          "What happened": "The guest paid after their 30-minute hold expired and the dates were booked by someone else. Please refund this payment." });
+        btn.disabled = false; btn.textContent = "I've paid — confirm my booking";
+        $("#err-confirm").innerHTML = "";
+        $("#err-confirm").append("Sorry — your 30-minute hold ran out and these dates were booked by someone else. Digvijay has been told and will refund your payment in full. ");
+        const a = document.createElement("a"); a.href = wa("Namaste Digvijay ji, my booking " + booking.ref + " could not be completed because the dates were taken. I paid " + inr(booking.paid) + " (UPI ref " + booking.utr + "). Please refund."); a.target = "_blank"; a.rel = "noopener"; a.textContent = "Message Digvijay on WhatsApp"; a.style.fontWeight = "600";
+        $("#err-confirm").append(a); return;
+      }
+      if (r.status !== 200) booking.unconfirmed = true;   // server unreachable: host still gets email/WhatsApp and checks manually
+    }
+    btn.textContent = "Sending…";
+    const emailed = await sendEmail("New booking " + booking.ref + " – " + booking.name + " (" + fmtDate(booking.checkin) + ")", {
+      "Booking reference": booking.ref, "Guest name": booking.name, "Phone": booking.phone, "email": booking.email,
+      "Check-in": fmtDate(booking.checkin), "Check-out": fmtDate(booking.checkout), "Nights": booking.nights, "Guests": booking.guests,
+      "Total": inr(booking.total), "Payment type": booking.paymentType, "Amount paid": inr(booking.paid), "Balance due": inr(booking.balance),
+      "UPI reference": booking.utr, "Message": booking.message || "—",
+      "Airbnb calendar": booking.unconfirmed
+        ? "⚠ The website could not save this booking automatically. Please block these dates on Airbnb yourself now."
+        : "Saved on the website. Airbnb will block these dates automatically within 3 hours (or tap Refresh under Connect calendars in Airbnb to block them now)."
+    });
+    btn.disabled = false; btn.textContent = "I've paid — confirm my booking";
+    const text = "Namaste Digvijay ji! I've booked " + CONFIG.propertyName + " and paid by UPI." +
+      "\nBooking ref: " + booking.ref + "\nName: " + booking.name + "\nPhone: " + booking.phone + "\nEmail: " + booking.email +
+      "\nDates: " + fmtDate(booking.checkin) + " to " + fmtDate(booking.checkout) + " (" + plural(booking.nights, "night") + ")" +
+      "\nGuests: " + booking.guests + "\nTotal: " + inr(booking.total) + "\nPaid: " + inr(booking.paid) + " (" + booking.paymentType + ")" +
+      "\nUPI ref: " + booking.utr + (booking.message ? "\nMessage: " + booking.message : "");
+    $("#waConfirm").href = wa(text);
+    $("#bookRef").textContent = booking.ref;
+    const first = booking.name.split(" ")[0];
+    $("#successMsg").textContent = emailed
+      ? "Thank you, " + first + "! Your booking and payment details have been sent to Digvijay. He'll confirm on WhatsApp and email once he has checked the payment. Keep your reference number handy."
+      : "Thank you, " + first + "! Please tap below to send your booking and payment details to Digvijay on WhatsApp so he can confirm it. Keep your reference number handy.";
+    payStep.hidden = true; done.hidden = false; setStep(3); done.focus({ preventScroll:true });
+  });
+
+  $("#newReq").addEventListener("click", () => {
+    form.reset(); $("#utr").value = ""; estimate(); booking = null; loadAvailability();
+    $$(".invalid").forEach(el => el.classList.remove("invalid")); $$(".err").forEach(el => el.textContent = "");
+    done.hidden = true; payStep.hidden = true; form.hidden = false; setStep(1);
+  });
+
+  /* Reviews */
+  function renderReviews(list){
+    const wrap = $("#revCards"); wrap.innerHTML = ""; wrap.hidden = !list.length;
+    list.forEach(r => {
+      const c = document.createElement("figure"); c.className = "rev-card";
+      c.innerHTML = '<div class="stars"></div><p></p><small></small>';
+      const n = Math.max(1, Math.min(5, Math.round(Number(r.rating) || 5)));
+      c.children[0].textContent = "★".repeat(n); c.children[0].setAttribute("aria-label", n + " out of 5 stars");
+      c.children[1].textContent = "“" + r.text + "”";
+      c.children[2].textContent = "— " + r.name + (r.date ? ", " + r.date : "");
+      wrap.appendChild(c);
+    });
+  }
+  renderReviews(REVIEWS);
+  const revWrap = $("#revFormWrap"), writeRev = $("#writeRev");
+  writeRev.addEventListener("click", () => {
+    const open = revWrap.hidden; revWrap.hidden = !open; writeRev.setAttribute("aria-expanded", open);
+    if (open) { revWrap.scrollIntoView({ behavior:"smooth", block:"center" }); }
+  });
+  const rvField = (id, ok, msg) => { const el = $("#" + id); if (el) el.classList.toggle("invalid", !ok); $("#err-" + id).textContent = ok ? "" : msg; return ok; };
+  $("#revForm").addEventListener("submit", async e => {
+    e.preventDefault();
+    const f = e.target; if (f._gotcha.value) return;
+    const rating = (f.querySelector('input[name="rating"]:checked') || {}).value;
+    const ok = [rvField("rating", !!rating, "Please choose a star rating."),
+      rvField("rvName", $("#rvName").value.trim().length >= 2, "Please enter your name."),
+      rvField("rvText", $("#rvText").value.trim().length >= 10, "Please write a few words (at least 10 characters).")].every(Boolean);
+    if (!ok) return;
+    const btn = $("#rvBtn"); btn.disabled = true; btn.textContent = "Sending…";
+    const data = { "Rating": rating + " / 5", "Guest name": $("#rvName").value.trim(), "Month of stay": $("#rvWhen").value.trim() || "—",
+      "Review": $("#rvText").value.trim(), "OK to publish on website": $("#rvOk").checked ? "Yes" : "No" };
+    const emailed = await sendEmail("New guest review – " + rating + "★ from " + data["Guest name"], data);
+    btn.disabled = false; btn.textContent = "Send review";
+    $("#revDoneMsg").innerHTML = "";
+    if (emailed) $("#revDoneMsg").textContent = "Your review has been sent to Digvijay.";
+    else {
+      $("#revDoneMsg").textContent = "Tap below to send your review to Digvijay on WhatsApp. ";
+      const a = document.createElement("a"); a.className = "btn btn-wa"; a.style.marginTop = "14px"; a.target = "_blank"; a.rel = "noopener";
+      a.textContent = "Send review on WhatsApp";
+      a.href = wa("Review for " + CONFIG.propertyName + "\nRating: " + data.Rating + "\nName: " + data["Guest name"] + "\nStay: " + data["Month of stay"] + "\n" + data.Review);
+      $("#revDoneMsg").appendChild(document.createElement("br")); $("#revDoneMsg").appendChild(a);
+    }
+    f.hidden = true; $("#revDone").hidden = false; $("#revDone").focus({ preventScroll:true });
+  });
+
+  /* Live updates from Google Sheet (column A = setting, column B = value) */
+  function parseCSV(t){
+    const rows = []; let row = [], f = "", q = false;
+    for (let i = 0; i < t.length; i++) {
+      const c = t[i];
+      if (q) { if (c === '"') { if (t[i+1] === '"') { f += '"'; i++; } else q = false; } else f += c; }
+      else if (c === '"') q = true;
+      else if (c === ",") { row.push(f); f = ""; }
+      else if (c === "\n" || c === "\r") { if (c === "\r" && t[i+1] === "\n") i++; row.push(f); rows.push(row); row = []; f = ""; }
+      else f += c;
+    }
+    if (f || row.length) { row.push(f); rows.push(row); }
+    return rows;
+  }
+  async function loadSheet(){
+    if (!CONFIG.sheetUrl) return;
+    try {
+      const res = await fetch(CONFIG.sheetUrl + (CONFIG.sheetUrl.includes("?") ? "&" : "?") + "t=" + Date.now(), { cache: "no-store" });
+      if (!res.ok) return;
+      const rows = parseCSV(await res.text());
+      const booked = [], reviews = [];
+      const keys = { name:"propertyName", nightly_rate:"nightlyRate", max_guests:"maxGuests", rating:"rating", review_count:"reviewCount",
+        email:"email", upi_id:"upiId", upi_name:"upiName", advance_percent:"advancePercent", announcement:"announcement",
+        airbnb_link:"airbnbUrl", maps_link:"mapsUrl" };
+      rows.forEach(([k = "", v = ""]) => {
+        k = k.trim().toLowerCase().replace(/\s+/g, "_"); v = v.trim();
+        if (!k || k === "setting") return;
+        if (k === "booked") { if (v) { const [a, b] = v.split(/\s*(?:to|→|–)\s*/); booked.push(b ? [a.trim(), b.trim()] : [a.trim()]); } return; }
+        if (k === "review") { const [name, date, rating, ...text] = v.split("|").map(s => s.trim()); if (name && text.join("|")) reviews.push({ name, date, rating, text: text.join(" | ") }); return; }
+        if (k === "phone") { if (v) { CONFIG.phoneDisplay = v; CONFIG.phoneLink = "+" + v.replace(/\D/g, ""); } return; }
+        if (k === "whatsapp") { if (v) CONFIG.whatsapp = v.replace(/\D/g, ""); return; }
+        if (keys[k] !== undefined) {
+          const num = ["nightlyRate","maxGuests","advancePercent"].includes(keys[k]);
+          if (k === "announcement" || v) CONFIG[keys[k]] = num ? (Number(v.replace(/[^\d.]/g, "")) || CONFIG[keys[k]]) : v;
+        }
+      });
+      CONFIG.bookedDates = booked;
+      applyConfig(); estimate(); showBooked();
+      renderReviews(REVIEWS.concat(reviews));
+    } catch (e) { /* keep the built-in values if the sheet can't be reached */ }
+  }
+  loadSheet();
+})();
+</script>
+</body>
+</html>
