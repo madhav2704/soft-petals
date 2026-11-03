@@ -8,7 +8,8 @@ export default async function handler(req, res) {
   if (!/^[A-Za-z0-9]{8,22}$/.test(String(b.utr || ""))) return send(res, 400, { error: "Enter the UPI reference number from your payment app." });
   const problem = validateStay(b.checkin, b.checkout);
   if (problem) return send(res, 400, { error: problem });
-  if (!storageReady()) return send(res, 503, { error: "Online booking is being set up. Please message us on WhatsApp." });
+  if (!storageReady() || !process.env.AIRBNB_ICAL_URL)
+    return send(res, 503, { error: "Online booking opens soon. Please message us on WhatsApp." });
 
   const all = await siteBookings();
   const existing = all.find(x => x.ref === b.ref);

@@ -8,7 +8,8 @@ export default async function handler(req, res) {
   if (b.website) return send(res, 400, { error: "Rejected" });                 // spam trap
   const problem = validateStay(b.checkin, b.checkout);
   if (problem) return send(res, 400, { error: problem });
-  if (!storageReady()) return send(res, 503, { error: "Online booking is being set up. Please message us on WhatsApp to book." });
+  if (!storageReady() || !process.env.AIRBNB_ICAL_URL)          // never take a booking that can't be checked against Airbnb
+    return send(res, 503, { error: "Online booking opens soon. Please message us on WhatsApp to book." });
 
   let clash;
   try { clash = await findClash(b.checkin, b.checkout, { fresh: true }); }
