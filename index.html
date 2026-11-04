@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Soft Petals | 3-Bedroom Home near Fateh Sagar Lake, Udaipur</title>
-<meta name="description" content="Soft Petals: an entire 3-bedroom, 3-bathroom boutique home for up to 6 guests near Fateh Sagar Lake, Udaipur. Terrace views, free parking outside the premises, Superhost Digvijay Singh Jhala. Book direct.">
+<title>Luxurious 3 Boutique Bedrooms amidst nature | Soft Petals, Udaipur</title>
+<meta name="description" content="Luxurious 3 Boutique Bedrooms amidst nature at Soft Petals: an entire 3-bedroom, 3-bathroom boutique home for up to 6 guests near Fateh Sagar Lake, Udaipur. Terrace views, free parking outside the premises, Superhost Digvijay Singh Jhala. Book direct.">
 <meta name="theme-color" content="#0e7490">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -64,7 +64,7 @@
   /* Hero */
   .hero{padding:56px 0 64px}
   .hero-grid{display:grid;grid-template-columns:1.05fr 1fr;gap:48px;align-items:center}
-  .badge{display:inline-flex;align-items:center;gap:6px;background:var(--primary-soft);color:var(--primary-dark);padding:6px 14px;border-radius:999px;font-size:.85rem;font-weight:600}
+  .badge{display:inline-block;line-height:1.5;background:var(--primary-soft);color:var(--primary-dark);padding:6px 14px;border-radius:999px;font-size:.85rem;font-weight:600}
   .hero h1{font-size:clamp(2.2rem,5.5vw,3.5rem);margin:18px 0 14px}
   .hero h1 span{color:var(--primary)}
   .hero p{color:var(--muted);font-size:1.08rem}
@@ -286,8 +286,8 @@
 <section class="hero">
   <div class="container hero-grid">
     <div class="reveal">
-      <span class="badge">★ <span data-bind="rating">4.83</span> · Guest favourite · Superhost</span>
-      <h1>Welcome to <span data-bind="propertyName">Soft Petals</span></h1>
+      <span class="badge"><span data-bind="propertyName">Soft Petals</span> · ★ <span data-bind="rating">4.83</span> · Guest favourite · Superhost</span>
+      <h1>Luxurious 3 Boutique Bedrooms <span>amidst nature</span></h1>
       <p>A luxurious 3-bedroom boutique home for up to 6 guests near Fateh Sagar Lake and Saheliyon ki Bari, with terrace views of the Maharana Pratap statue, Monsoon Palace and Neemach Mata temple. Free parking outside the premises.</p>
       <div class="hero-actions">
         <a href="#book" class="btn btn-primary">Book now</a>
@@ -679,7 +679,7 @@ const REVIEWS = [
       maps: CONFIG.mapsUrl
     };
     $$("[data-link]").forEach(a => { if (links[a.dataset.link]) a.href = links[a.dataset.link]; });
-    document.title = CONFIG.propertyName + " | 3-Bedroom Home near Fateh Sagar Lake, Udaipur";
+    document.title = "Luxurious 3 Boutique Bedrooms amidst nature | " + CONFIG.propertyName + ", Udaipur";
     const n = $("#notice"); n.textContent = CONFIG.announcement || ""; n.hidden = !CONFIG.announcement;
     $("#upiId").textContent = CONFIG.upiId;
     $("#advLabel").textContent = CONFIG.advancePercent + "% advance";
