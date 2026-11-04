@@ -4,7 +4,7 @@ import { validateStay, findClash, siteBookings, saveBooking, removeBooking, stor
 export default async function handler(req, res) {
   if (req.method !== "POST") return send(res, 405, { error: "Use POST" });
   const b = await readJSON(req);
-  if (!/^SP-\d{6}-[A-Z0-9]{4}$/.test(b.ref || "")) return send(res, 400, { error: "Missing booking reference." });
+  if (!/^(LB|SP)-\d{6}-[A-Z0-9]{4}$/.test(b.ref || "")) return send(res, 400, { error: "Missing booking reference." });
   if (!/^[A-Za-z0-9]{8,22}$/.test(String(b.utr || ""))) return send(res, 400, { error: "Enter the UPI reference number from your payment app." });
   const problem = validateStay(b.checkin, b.checkout);
   if (problem) return send(res, 400, { error: problem });

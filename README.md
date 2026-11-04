@@ -1,6 +1,6 @@
-# Soft Petals — website and booking system
+# Luxurious 3 Boutique Bedrooms amidst nature — website and booking system
 
-Live website for Soft Petals guest house, Udaipur (host: Digvijay Singh Jhala).
+Live website for the "Luxurious 3 Boutique Bedrooms amidst nature" guest house, Udaipur (host: Digvijay Singh Jhala).
 
 ## How double bookings are prevented
 - **Airbnb → website:** before every booking, the server reads Airbnb's calendar live

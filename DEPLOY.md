@@ -1,4 +1,4 @@
-# Deploying Soft Petals (browser only, about 10 minutes)
+# Deploying the website (browser only, about 10 minutes)
 
 ## 1. Put the files on GitHub
 1. Unzip `soft-petals-site.zip` on your computer.
@@ -32,7 +32,7 @@ If `airbnbError` is `true`, the Airbnb link was copied wrongly: fix it in
 
 ## 5. Connect the website calendar to Airbnb
 1. In Airbnb: **Calendar → Availability → Connect calendars → Connect to another website**.
-2. Paste `https://<your-site>/calendar.ics`, name it **Soft Petals website**, and save.
+2. Paste `https://<your-site>/calendar.ics`, name it **Website bookings**, and save.
 
 Airbnb then blocks website bookings automatically (it checks every 3 hours).
 After each website booking, tap **Refresh** next to this calendar in Airbnb to block the dates at once.

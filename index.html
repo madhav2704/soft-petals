@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Luxurious 3 Boutique Bedrooms amidst nature | Soft Petals, Udaipur</title>
-<meta name="description" content="Luxurious 3 Boutique Bedrooms amidst nature at Soft Petals: an entire 3-bedroom, 3-bathroom boutique home for up to 6 guests near Fateh Sagar Lake, Udaipur. Terrace views, free parking outside the premises, Superhost Digvijay Singh Jhala. Book direct.">
+<title>Luxurious 3 Boutique Bedrooms amidst nature | Udaipur</title>
+<meta name="description" content="Luxurious 3 Boutique Bedrooms amidst nature: an entire 3-bedroom, 3-bathroom boutique home for up to 6 guests near Fateh Sagar Lake, Udaipur. Terrace views, free parking outside the premises, Superhost Digvijay Singh Jhala. Book direct.">
 <meta name="theme-color" content="#0e7490">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -47,6 +47,7 @@
   .nav{display:flex;align-items:center;justify-content:space-between;height:68px}
   .brand{display:flex;align-items:center;gap:10px;font-weight:700}
   .logo{width:38px;height:38px;border-radius:10px;background:var(--primary);color:#fff;display:grid;place-items:center;font-family:"Playfair Display",serif;font-size:1.2rem}
+  .brand-text{display:block;line-height:1.25;max-width:300px}
   .brand small{display:block;font-size:.7rem;font-weight:500;color:var(--muted);letter-spacing:.08em;text-transform:uppercase}
   .nav-links{display:flex;gap:26px;list-style:none;font-size:.93rem;font-weight:500}
   .nav-links a{color:var(--muted);transition:color .2s}
@@ -227,6 +228,7 @@
   @media (max-width:900px){
     .nav-links,.nav .btn{display:none}
     .menu-btn{display:block}
+    .brand-text{max-width:230px;font-size:.92rem}
     .hero-grid,.about-grid,.book-grid{grid-template-columns:1fr}
     .stats{grid-template-columns:repeat(3,1fr);margin-top:0}
     .grid-4{grid-template-columns:repeat(2,1fr)}
@@ -252,8 +254,8 @@
 <header>
   <div class="container nav">
     <a href="#top" class="brand">
-      <span class="logo">S</span>
-      <span><span data-bind="propertyName">Soft Petals</span><small>Udaipur · Rajasthan</small></span>
+      <span class="logo">L</span>
+      <span class="brand-text"><span data-bind="propertyName">Luxurious 3 Boutique Bedrooms amidst nature</span><small>Udaipur · Rajasthan</small></span>
     </a>
     <ul class="nav-links">
       <li><a href="#about">About</a></li>
@@ -286,7 +288,7 @@
 <section class="hero">
   <div class="container hero-grid">
     <div class="reveal">
-      <span class="badge"><span data-bind="propertyName">Soft Petals</span> · ★ <span data-bind="rating">4.83</span> · Guest favourite · Superhost</span>
+      <span class="badge">★ <span data-bind="rating">4.83</span> · Guest favourite · Superhost</span>
       <h1>Luxurious 3 Boutique Bedrooms <span>amidst nature</span></h1>
       <p>A luxurious 3-bedroom boutique home for up to 6 guests near Fateh Sagar Lake and Saheliyon ki Bari, with terrace views of the Maharana Pratap statue, Monsoon Palace and Neemach Mata temple. Free parking outside the premises.</p>
       <div class="hero-actions">
@@ -602,7 +604,7 @@
   <div class="container">
     <div class="foot">
       <div>
-        <strong style="color:#fff;font-size:1.1rem" data-bind="propertyName">Soft Petals</strong>
+        <strong style="color:#fff;font-size:1.1rem" data-bind="propertyName">Luxurious 3 Boutique Bedrooms amidst nature</strong>
         <p>Near Fateh Sagar Lake, Udaipur, Rajasthan</p>
       </div>
       <div>
@@ -612,7 +614,7 @@
       </div>
     </div>
     <div class="fine">
-      <span>© <span id="year"></span> <span data-bind="propertyName">Soft Petals</span>. All rights reserved.</span>
+      <span>© <span id="year"></span> <span data-bind="propertyName">Luxurious 3 Boutique Bedrooms amidst nature</span>. All rights reserved.</span>
       <span>Independent host website. Not affiliated with Airbnb.</span>
     </div>
   </div>
@@ -632,7 +634,7 @@
    BUSINESS SETTINGS — edit only this block
    ============================================================ */
 const CONFIG = {
-  propertyName: "Soft Petals",
+  propertyName: "Luxurious 3 Boutique Bedrooms amidst nature",
   phoneDisplay: "+91 90013 05559",
   phoneLink:    "+919001305559",
   whatsapp:     "919001305559",          // country code + number, no "+"
@@ -679,7 +681,7 @@ const REVIEWS = [
       maps: CONFIG.mapsUrl
     };
     $$("[data-link]").forEach(a => { if (links[a.dataset.link]) a.href = links[a.dataset.link]; });
-    document.title = "Luxurious 3 Boutique Bedrooms amidst nature | " + CONFIG.propertyName + ", Udaipur";
+    document.title = CONFIG.propertyName + " | Udaipur";
     const n = $("#notice"); n.textContent = CONFIG.announcement || ""; n.hidden = !CONFIG.announcement;
     $("#upiId").textContent = CONFIG.upiId;
     $("#advLabel").textContent = CONFIG.advancePercent + "% advance";
@@ -817,7 +819,7 @@ const REVIEWS = [
     const ok = ["checkin","checkout","name","phone","email"].map(check).every(Boolean);
     if (!ok){ const f = form.querySelector(".invalid"); if (f) f.focus(); return; }
     const n = nights(), total = CONFIG.nightlyRate * n;
-    let ref = "SP-" + ci.value.replace(/-/g,"").slice(2) + "-" + Math.random().toString(36).slice(2,6).toUpperCase(), held = false;
+    let ref = "LB-" + ci.value.replace(/-/g,"").slice(2) + "-" + Math.random().toString(36).slice(2,6).toUpperCase(), held = false;
     if (API) {
       const b = $("#contBtn"); b.disabled = true; b.textContent = "Checking availability…";
       let r; try { r = await api("/hold", { checkin: ci.value, checkout: co.value, guests: guests.value }); } catch (err) { r = { status: 0, data: {} }; }
