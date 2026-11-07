@@ -11,6 +11,11 @@ Live website for the "Luxurious 3 Boutique Bedrooms amidst nature" guest house, 
   Airbnb refreshes it every 3 hours; tap **Refresh** there to block new website bookings immediately.
 - Dates are **held for 30 minutes** while a guest pays, so two guests can't pay for the same nights.
 
+## Owner calendar
+Open `/owner` on the website and log in with the owner password (`OWNER_PASSWORD` in Vercel settings).
+Tap the first and last night to close dates; tap closed dates to reopen them; tap a website booking to cancel it.
+Closed dates can't be booked on the website and are sent to Airbnb through `/calendar.ics`.
+
 ## Files
 | Path | What it does |
 |---|---|
@@ -18,11 +23,13 @@ Live website for the "Luxurious 3 Boutique Bedrooms amidst nature" guest house, 
 | `api/availability.js` | Booked nights (Airbnb + website) for the date picker |
 | `api/hold.js` | Holds dates for 30 min after a live Airbnb check |
 | `api/confirm.js` | Confirms the booking after UPI payment |
+| `owner.html`, `api/owner.js` | Owner calendar: close/reopen dates, cancel website bookings |
 | `api/calendar.js` | `/calendar.ics` feed for Airbnb |
 | `lib/core.js` | Shared booking rules and storage |
 
 ## Settings (Vercel → Project → Settings → Environment Variables)
 - `AIRBNB_ICAL_URL` — Airbnb "Export calendar" link
+- `OWNER_PASSWORD` — password for the owner calendar page
 - `BLOB_READ_WRITE_TOKEN` — added automatically when the Blob store is connected
 
 ## Cancelling a website booking

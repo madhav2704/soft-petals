@@ -1,4 +1,33 @@
 {
-  "rewrites": [{ "source": "/calendar.ics", "destination": "/api/calendar" }],
-  "headers": [{ "source": "/photos/(.*)", "headers": [{ "key": "Cache-Control", "value": "public, max-age=604800" }] }]
+  "rewrites": [
+    {
+      "source": "/calendar.ics",
+      "destination": "/api/calendar"
+    }
+  ],
+  "headers": [
+    {
+      "source": "/photos/(.*)",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=604800"
+        }
+      ]
+    },
+    {
+      "source": "/owner",
+      "headers": [
+        {
+          "key": "X-Robots-Tag",
+          "value": "noindex"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "no-store"
+        }
+      ]
+    }
+  ],
+  "cleanUrls": true
 }
